@@ -11,44 +11,10 @@
 		<property name="state" value="UP" />
 	</bean>
     
-    <bean name="emp1" class="com.my.spring.model.Employee">
+    <bean name="emp1" class="com.my.spring.model.Employee" autowire=" byType " scope="prototype">
     	<property name="id" value="1011"/>
     	<property name="name" value="Shivam"/>
     	<property name="gender" value="male"/>
-    	<property name="address" ref="add" />
-    
-    
-    	<property name="myList">
-			<list>
-				<value>1991</value>
-				<value>1991</value>
-				<value>63</value>
-				<value>845</value>
-				<value>325</value>
-				<value>875</value>
-				<value>191</value>
-			</list>
-		</property>		
-		<property name="setOfContacts">
-			<set>
-				<value>1991</value>
-				<value>1991</value>
-				<value>63</value>
-				<value>845</value>
-				<value>325</value>
-				<value>875</value>
-				<value>191</value>
-			</set>
-		</property>
-		<property name="map">
-			<map>
-				<entry key="1" value="One" />
-				<entry key="2" value="TWO" />
-				<entry key="3" value="THREE" />
-				<entry key="4" value="FOUR" />
-				<entry key="1" value="ONE" />
-			</map>
-		</property>	
 	</bean>
     
     
