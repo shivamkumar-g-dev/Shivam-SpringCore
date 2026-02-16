@@ -19,9 +19,7 @@ public class Main {
 		System.out.println(bean);
 		bean.setName("Avya");
 		bean.setGender("Female");
-		System.out.println(bean);
-		bean.setGender("Female");
-		System.out.println(bean);
+		System.out.println(bean); 
 		
 		
 //		Employee bean2 = ioc.getBean("emp2",Employee.class);
