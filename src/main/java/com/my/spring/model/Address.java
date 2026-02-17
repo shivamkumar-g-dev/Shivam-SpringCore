@@ -1,5 +1,8 @@
 package com.my.spring.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Address {
 	
 	
@@ -7,7 +10,7 @@ public class Address {
 
 	public Address() {
 		super();
-		// TODO Auto-generated constructor stub
+		System.out.println("Address.Address()");
 	}
 
 	public Address(String city, String state) {

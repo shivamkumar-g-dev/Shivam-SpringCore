@@ -1,26 +1,21 @@
 package com.my.spring.model;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Employee {
-	
-	private int id;
-	
-	private String name ,gender;
-	
-	private Address address;
-	
 
+	private int id;
+
+	private String name, gender;
+
+	private Address address;
 
 	public Employee() {
 		super();
 		System.out.println("Employee.Employee()");
-		// TODO Auto-generated constructor stub
 	}
-
-	
 
 	public Employee(int id, String name, String gender, Address address) {
 		super();
@@ -33,7 +28,8 @@ public class Employee {
 	public Address getAddress() {
 		return address;
 	}
-	
+
+	@Autowired
 	public void setAddress(Address address) {
 		this.address = address;
 		System.out.println("Employee.setAddress()");
@@ -66,14 +62,9 @@ public class Employee {
 		this.gender = gender;
 	}
 
-
-
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + ", address=" + address + "]";
 	}
-
-
-
 
 }
