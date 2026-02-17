@@ -15,7 +15,7 @@ public class Main {
 		Employee emp = ioc.getBean(Employee.class);
 		Address add = ioc.getBean(Address.class);
 		
-		emp.setName("Ankush");
+		emp.setName("Shivam");
 		
 		System.out.println(emp);
 		System.out.println(add);
